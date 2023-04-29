@@ -1,0 +1,325 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(39, 35, 35);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.list {
+    margin: 10px;
+    padding: 1px;
+}
+.list li {
+    display: inline;
+    color: black;
+}
+.list li a {
+    color:white;
+    margin: 15px;
+    padding-right: 5px;
+    text-decoration: none;
+    transition: 0.5;
+    font-size: 16px;
+    font-weight: 800;
+    text-shadow: 1px 2px black;
+}
+.list li a:hover {
+    color: rgb(226, 119, 19);  
+      /*  
+      i used the pseudo to hover
+      */
+}
+.list a #contact {
+    background-color: rgb(226, 119, 19);    
+    padding: 5px;
+    margin: 10px;
+    border-radius: 100px;
+    color: black;
+}
+.header-container{
+    background-image: url(/asset/headerphoto.jpg);
+    color: white;
+    padding: 20px;
+    height: 1500px;
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    text-align: left;
+    background-size:cover;
+    background-position: center;
+    opacity: 0.7;
+}
+.header-image {
+    text-align: left ;
+    padding: 50px;
+    margin-top: 400px;
+    background-color: 0,0,0,0.5;
+}
+.header-image h1 {
+    padding: 10px;
+    margin: auto;
+    color:  white;
+    font-weight: 1000px;
+    font-size: 50px;
+    line-height: 50px;
+    text-shadow: 1px 2.5px  black;
+}
+.header-image h3 {
+    color:rgb(226, 119, 19);
+    font-weight: 100;
+    font-size: 25px;
+    text-shadow: 1px 2px  rgb(0, 0, 0);
+    width: 300px;
+    background-color: black;
+    border-radius: 15px;
+    padding: 2px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+.header-image button {
+    background-color: rgb(50, 205, 115);
+    padding: 10px;
+    color:  black;
+    border: 1px solid rgb(50, 205, 115) ;
+    border-radius: 20px;
+    font-weight: 600
+}
+.header-image button:hover {
+    background-color:  rgb(226, 119, 19);
+    color: rgb(0, 10, 4) ;
+    border: 1px solid rgb(226, 119, 19) ;
+          /*  
+      i used the pseudo to hover on the explore portfolio
+      */
+}
+.about-container{
+    padding: 10px;
+    margin: 20px;
+    background-color: rgb(219, 202, 202);
+    color: black;
+    border: 1px solid black;
+}
+#about {
+    text-align: left;
+    line-height: 1.5;
+    padding: 10px;
+}
+#about h2 {
+    color: black;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+#about p {
+    color: #41403f;
+}
+.mission, .vision{
+    display: inline-block;
+    text-align: center;
+    line-height: 1.5;
+    padding: 10px;
+    vertical-align: middle;
+    margin-right: 20px;
+    background-color: rgb(50, 205, 115);
+}
+.mission h3 {
+ color: black;
+    font-size: 24px;
+}
+.vision h3 {
+    color: black;
+       font-size: 24px;
+   }
+.mission p {
+    color: black;
+       font-size: 14px;
+   }
+   .vision p {
+    color: black;
+       font-size: 14px;
+   }  
+   .mission-vision ul {
+    margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+   }
+   .mission-vision ul li {
+    margin-right: 20px;
+	margin-bottom: 20px;
+	flex: 1 0 30%;
+   }
+   .why-us {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(184, 175, 166);
+    color: black;
+    border: 1px solid black;
+   }
+   .why h2 {
+    color: black;
+       font-size: 30px;
+       text-transform: uppercase;
+   }
+   .why p {
+    color: #201f1e;
+       font-size: 14px;
+   }
+   .service h3 {
+        color:#201f1e;
+       font-size: 24px;
+       text-align: left;
+   }
+   .service li {
+    color: #201f1e;
+       font-size: 14px;
+       text-align: left;
+       padding: 3px;
+       margin: 10px;
+   }
+   .service li i {
+    padding: 5px;
+   }
+   .testimonial h1 {
+    color: black;
+       font-size: 30px;
+       text-align: center;
+       text-transform: uppercase;
+
+   }
+   .testimonial p {
+    color: #201f1e;
+       font-size: 14px;
+       text-align: center;
+   }
+   .testimonial h3 {
+    color: #201f1e;
+       font-size: 18px;
+       text-align: center;
+   }
+   #portfolio{
+    background-color: rgb(79, 75, 75);
+    padding: 20px;
+    margin: 20px;
+   }
+   #portfolio ul {
+    margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+   }
+   #portfolio ul li {
+    margin-right: 20px;
+	margin-bottom: 20px;
+	flex: 1 0 30%;
+   }
+   #portfolio ul img {
+    max-width: 100%;
+   }
+   #portfolio h1{
+    color:  rgb(226, 119, 19);
+    text-align: center;
+    height: 70px;
+    text-transform: uppercase;
+    text-shadow: 1px 2px black;
+   }
+   .project1, .project2, .project3, .project4, .project5, .project6{
+    display: -ms-inline-grid;
+    padding: 10px;
+    height: 200px;
+    vertical-align: middle;
+    margin-right: 20px;
+    width: 300px;
+}
+.project1:hover{
+    background-color:  rgb(226, 119, 19);
+    color: rgb(0, 10, 4) ;
+    border: 1px solid rgb(226, 119, 19) ;
+}
+.project2:hover{
+    background-color:  rgb(226, 119, 19);
+    color: rgb(0, 10, 4) ;
+    border: 1px solid rgb(226, 119, 19) ;
+}
+.project3:hover{
+    background-color:  rgb(226, 119, 19);
+    color: rgb(0, 10, 4) ;
+    border: 1px solid rgb(226, 119, 19) ;
+}
+.project4:hover{
+    background-color:  rgb(226, 119, 19);
+    color: rgb(0, 10, 4) ;
+    border: 1px solid rgb(226, 119, 19) ;
+}
+.project5:hover{
+    background-color:  rgb(226, 119, 19);
+    color: rgb(0, 10, 4) ;
+    border: 1px solid rgb(226, 119, 19) ;
+}
+.project6:hover{
+    background-color:  rgb(226, 119, 19);
+    color: rgb(0, 10, 4) ;
+    border: 1px solid rgb(226, 119, 19) ;
+}
+#contact{
+    padding: 10px;
+    margin: 20px;
+    background-color: #201f1e;
+}
+#contact input{
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+#contact textarea{
+    border: 2px solid black;
+    margin:5px;
+}
+#btn:focus{
+    outline: none;
+    box-shadow: 0 0 0 3px rgb(226, 119, 19);
+          /*  
+      i used the pseudo to focus
+      */
+}
+footer {
+    color: black;
+    text-align: center;
+    border: 0px solid black;
+    margin: 10px;
+    text-transform: capitalize;
+}
+footer a {
+    color: greenyellow;
+}
+.social{
+    background-color: rgb(226, 119, 19);
+    padding: 5px;
+    margin: 10px;
+}
+.copy{
+    background-color:#201f1e;
+    margin: 10px;
+    padding: 5px;
+    color: white;
+}
+.twitter{
+    color: blue;
+    font-size: 20px;
+}
+.instagram{
+    color: purple;
+    font-size: 20px;
+}
+.linkedin{
+    color: blue;
+    font-size: 20px;
+}
+/* 
+changed my icons color
+*/
