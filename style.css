@@ -103,11 +103,13 @@ body {
     background-color: rgb(13, 0, 49);
     color: white;
     border: 1px solid black;
+
 }
 #about {
     text-align: left;
     line-height: 1.5;
     padding: 10px;
+
 }
 #about h2 {
     color: white;
@@ -203,6 +205,17 @@ body {
     color: rgb(13, 0, 49);
        font-size: 18px;
        text-align: center;
+   }
+   .test {
+    color: white;
+    background: rgb(13, 0, 49);
+    padding: 2px;
+    border-radius: 5px;
+    font-size: small;
+    font-style: italic;
+   }
+   .shuka {
+    font-weight: bold;
    }
    #portfolio{
     background-color: rgb(13, 0, 49);
@@ -308,8 +321,10 @@ footer {
     text-transform: capitalize;
 }
 footer a {
-    color: greenyellow;
+    color: white;
     text-decoration: none;
+    border-radius: 15px;
+    font-weight: 700;
 }
 .social{
     background-color: rgb(13, 0, 49);
