@@ -6,32 +6,33 @@
 body {
     background-color: white;
     color: rgb(13, 0, 49);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'helvetica', sans-serif;
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 2;
 }
-.list {
-    margin: 10px;
-    padding: 1px;
+.list ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 .list li {
-    display: inline;
-    color: black;
+    margin-right: 20px;
 }
 .list li a {
-    color:white;
+    color:rgb(13, 0, 49);
     margin: 15px;
-    padding-right: 5px;
+    padding: 5px;
     text-decoration: none;
     transition: 0.5;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 800;
-    text-shadow: 1px 2px rgb(13, 0, 49);
+    display: block;
 }
 .list li a:hover {
     color: rgb(13, 0, 49);  
     text-shadow: 1px 0.5px white;
-
+    font-size: 20px;
       /*  
       i used the pseudo to hover
       */
@@ -41,33 +42,34 @@ body {
     padding: 5px;
     margin: 10px;
     border-radius: 100px;
-    color: black;
+    color: rgb(13, 0, 49);
 }
 .header-container{
-    background-image: url(/asset/headerphoto\ 3.jpg);
+    background-image: url(/asset/headersmoke.PNG);
     color: white;
     padding: 20px;
-    height: 1500px;
+    height: 800px;
     margin-top: 10px;
     background-repeat: no-repeat;
     text-align: left;
     background-size:cover;
     background-position: center;
+
 }
 .header-image {
     text-align: left;
-    padding: 50px;
-    margin-top: 400px;
+    padding-right: 50px;
+    margin-top: 250px;
     background-color: 0,0,0,0.5;
+    margin-left: 50px;
 }
 .header-image h1 {
     padding: 10px;
     margin: auto;
-    color:  white;
+    color:  rgb(13, 0, 49);
     font-weight: 1000px;
     font-size: 50px;
     line-height: 50px;
-    text-shadow: 1px 2.5px  rgb(13, 0, 49);
 }
 .header-image h3 {
     color: white;
@@ -79,6 +81,13 @@ body {
     padding: 5px;
     text-align: left;
     margin-bottom: 5px;
+}
+.header-image h4 {
+    color: rgb(13, 0, 49);
+    font-size: 25px;
+    width: 300px;
+    padding: 5px;
+    text-align: left;
 }
 .header-image button {
     background-color:white;
@@ -105,13 +114,11 @@ body {
     background-color: rgb(13, 0, 49);
     color: white;
     border: 1px solid black;
-
 }
 #about {
     text-align: left;
     line-height: 1.5;
     padding: 10px;
-
 }
 #about h2 {
     color: white;
@@ -120,46 +127,59 @@ body {
 }
 #about p {
     color: white;
+    font-size: 18px;
+    line-height: 2;
 }
-.mission, .vision{
-    display: inline-block;
-    text-align: center;
-    line-height: 1.5;
-    padding: 10px;
-    vertical-align: middle;
-    margin-right: 20px;
-    background-color: white;
-    color: black;
-}
-.mission h3 {
-    font-size: 24px;
-}
-.vision h3 {
-       font-size: 24px;
+.gallery{
+    background-color: rgb(13, 0, 49);
+    padding: 20px;
+    margin: 20px;
    }
-.mission p {
-       font-size: 14px;
-   }
-   .vision p {
-       font-size: 14px;
-   }  
-   .mission-vision ul {
+   .gallery ul {
     margin: 0;
 	padding: 0;
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
    }
-   .mission-vision ul li {
+   .gallery ul li {
     margin-right: 20px;
 	margin-bottom: 20px;
-	flex: 1 0 30%;
+	flex: 1 0 20%;
    }
+   .gallery ul img {
+    max-width: 100%;
+   }
+   .gallery h1{
+    padding: 15px;
+    color:  white;
+    border: 1px solid rgb(13, 0, 49) ;
+    border-radius: 1px;
+    margin-top: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    width: 50% auto;  
+    margin-bottom: 50px;
+    font-size: 35px;
+   }
+.image1, .image2, .image3, .image4{
+    display: flex;
+    padding: 10px;
+    height: 300px;
+    vertical-align: middle;
+    margin-right: 20px;
+    width: 300px;
+}
+.image2, .image4{
+    padding: 30px;
+    height: 400px;
+}
    .why-us {
     padding: 20px;
     margin: 20px;
     background-color: whitesmoke;
-    color: black;
+    color: rgb(13, 0, 49);
    }
    .why h2 {
     color: rgb(13, 0, 49);
@@ -167,25 +187,81 @@ body {
        text-transform: uppercase;
    }
    .why p {
-    color: #201f1e;
-       font-size: 14px;
+    color: rgb(13, 0, 49);
+       font-size: 18px;
        padding: 5px;
+       font-size: 18px;
+       line-height: 2;
    }
-   .service h3 {
+   .serviceh2 {
         color: rgb(13, 0, 49);
-       font-size: 24px;
-       text-align: left;
+       font-size: 30px;
+       text-align: center;
        margin-top: 10px;
    }
-   .service li {
-    color: black;
+   .service {
+    color: rgb(13, 0, 49);
        font-size: 14px;
-       text-align: left;
+       text-align: center;
        padding: 5px;
        margin-bottom: 10px;
+       display: flex;
+       flex-direction: row;
    }
-   .service li i {
+   .server {
+    padding: 10px;
+    flex: 30%;
+    border: 2px solid rgb(13, 0, 49) ;
+   }
+   .server h4 {
+    font-size: 20px;
+}
+   .server p {
     padding: 5px;
+   }
+   .server i {
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(13, 0, 49);
+    border-radius: 10px;
+   }
+
+   .managing {
+    padding: 10px;
+    flex: 30%;
+    border: 2px solid rgb(13, 0, 49) ;
+   }
+   .managing h4 {
+    font-size: 20px;
+}
+   .managing p {
+    padding: 5px;
+   }
+   .managing i {
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(13, 0, 49);
+    border-radius: 10px;
+   }
+   .security {
+    padding: 10px;
+    flex: 30%;
+    border: 2px solid rgb(13, 0, 49) ;
+   }
+   .security h4 {
+    font-size: 20px;
+}
+   .security p {
+    padding: 5px;
+   }
+   .security i {
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(13, 0, 49);
+    border-radius: 10px;
    }
    .testimonial{
     padding: 40px;
@@ -196,11 +272,10 @@ body {
        text-align: center;
        text-transform: uppercase;
        margin-bottom: 10px;
-
    }
    .testimonial p {
-    color: #201f1e;
-       font-size: 14px;
+    color: rgb(13, 0, 49);
+       font-size: 16px;
        text-align: center;
    }
    .testimonial h3 {
@@ -254,7 +329,7 @@ body {
     font-size: 35px;
    }
    .project1, .project2, .project3, .project4, .project5, .project6{
-    display: -ms-inline-grid;
+    display: flex;
     padding: 10px;
     height: 200px;
     vertical-align: middle;
@@ -355,3 +430,557 @@ footer a {
 /* 
 changed my icons color
 */
+
+@media screen and (max-width: 600px) { 
+
+    .header-container{
+        background-image: url(/asset/professional\ headshot.JPG);
+        color: white;
+        padding: 20px;
+        margin-left: 20px;
+        background-repeat: no-repeat;
+        text-align: left;
+        background-size:cover;
+        background-position: center;
+        border: 2px solid rgb(13, 0, 49);
+        border-radius:200px 50px ;
+    }
+    .list {
+        margin: 12px;
+        padding: 2px;
+        text-align: right;
+    }    
+    .list li a {
+        color:white;
+        margin: 15px;
+        padding-right: 5px;
+        text-decoration: none;
+        transition: 0.5;
+        font-size: 14px;
+        font-weight: 800;
+    }
+    .list li a:hover {
+        color: rgb(13, 0, 49);  
+        text-shadow: 1px 0.5px white;
+        font-size: 16px;
+    }
+    .header-image {
+        text-align: left;
+        padding-right: 50px;
+        margin-bottom: 250px;
+        background-color: 0,0,0,0.5;
+        margin-left: 50px;
+    }
+    .header-image h1 {
+        padding: 10px;
+        margin: auto;
+        color:  white;
+        font-weight: 1000px;
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .header-image h3 {
+        color: white;
+        font-weight: 900;
+        font-size: 25px;
+        width: 310px;
+        border-radius: 15px;
+        padding: 5px;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+    .header-image h4 {
+        color: white;
+        font-size: 18px;
+        width: 300px;
+        text-align: left;
+        margin: 2;
+    }
+    .header-image button {
+        background-color:white;
+        padding: 15px;
+        color:  rgb(13, 0, 49);
+        border: 1px solid rgb(13, 0, 49)black ;
+        border-radius: 15px;
+        box-shadow: 1px 8px rgb(13, 0, 49);
+        margin-top: 15px;
+        font-weight: 900;
+    }
+    .header-image button:hover {
+        background-color:  rgb(13, 0, 49);
+        color: white;
+        border: 1px solid rgb(13, 0, 49) ;
+        box-shadow: 1px 10px white;
+    }
+    .about-container{
+        padding: 10px;
+        margin: 20px;
+        background-color: rgb(13, 0, 49);
+        color: white;
+        border: 1px solid rgb(13, 0, 49) ;
+        border-radius: 15px;
+    }
+    #about {
+        text-align: left;
+        line-height: 1.5;
+        padding: 10px;
+    }
+    #about h2 {
+        color: white;
+        text-transform: uppercase;
+        font-size: 32px;
+    }
+    #about p {
+        color: white;
+        font-size: 14px;
+        line-height: 2;
+    }
+    .gallery{
+        background-color: rgb(13, 0, 49);
+        padding: 10px;
+        margin-bottom: 20px;
+       }
+       .gallery ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: left;
+       }
+       .gallery ul li {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        flex: 1 0 20%;
+       }
+       .gallery ul img {
+        max-width: 100%;
+       }
+       .gallery h1{
+        color:  white;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: left;
+        font-size: 28px;
+        margin: 20px 10px;
+       }
+    .image1, .image2, .image3, .image4{
+        display: flex;
+        padding: 10px;
+        height: 400px;
+        vertical-align: middle;
+        margin-right: 20px;
+        width: 300px;
+    }
+    .why-us {
+        padding: 20px;
+        margin: 20px;
+        background-color: whitesmoke;
+        color: rgb(13, 0, 49);
+       }
+       .why h2 {
+        color: rgb(13, 0, 49);
+           font-size: 28px;
+           text-transform: uppercase;
+       }
+       .why p {
+        color: rgb(13, 0, 49);
+           font-size: 15px;
+           padding: 5px;
+           font-size: 15px;
+           line-height: 2;
+           font-family:'helvetica', sans-serif;
+       }
+       .serviceh2 {
+            color: rgb(13, 0, 49);
+           font-size: 25px;
+           text-align: center;
+           margin-top: 10px;
+       }
+       .service {
+        color: rgb(13, 0, 49);
+           font-size: 14px;
+           text-align: center;
+           padding: 5px;
+           margin-bottom: 10px;
+           display: flex;
+           flex-direction: column;
+       }
+       .testimonial{
+        padding: 40px;
+       }
+       .testimonial h1 {
+        color: rgb(13, 0, 49);
+           font-size: 30px;
+           text-align: center;
+           text-transform: uppercase;
+           margin-bottom: 10px;
+       }
+       .testimonial p {
+        color: rgb(13, 0, 49);
+           font-size: 14px;
+           text-align: center;
+       }
+       .testimonial h3 {
+        color: rgb(13, 0, 49);
+           font-size: 18px;
+           text-align: center;
+       }
+       .test {
+        color: white;
+        background: rgb(13, 0, 49);
+        padding: 2px;
+        border-radius: 5px;
+        font-size: small;
+        font-style: italic;
+       }
+       .shuka {
+        font-weight: bold;
+       }
+       #portfolio{
+        background-color: rgb(13, 0, 49);
+        padding: 20px;
+        margin: 20px;
+       }
+       #portfolio ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center
+       }
+       #portfolio ul li {
+        margin-right: 20px;
+        margin-bottom: 20px;
+        flex: 1 0 30%;
+       }
+       #portfolio ul img {
+        max-width: 100%;
+       }
+       #portfolio h1{
+        padding: 15px;
+        color:  white;
+        border: 1px solid rgb(13, 0, 49) ;
+        border-radius: 10px;
+        box-shadow: 1px 6px white;
+        margin-top: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        width:auto;  
+        margin-bottom: 50px;
+        font-size: 28px;
+       }
+       .project1, .project2, .project3, .project4, .project5, .project6{
+        display: flex;
+        padding: 10px;
+        height: 200px;
+        vertical-align: middle;
+        margin-right: 20px;
+        width: 300px;
+        align-items: center;
+    }
+    .project1:hover{
+        background-color:  black;
+        border: 1px solid black ;
+    }
+    .project2:hover{
+        background-color:  white;
+        border: 1px solid wite ;
+    }
+    .project3:hover{
+        background-color:  black;
+        border: 1px solid black ;
+    }
+    .project4:hover{
+        background-color:  white;
+        border: 1px solid wite ;
+    }
+    .project5:hover{
+        background-color:  black;
+        border: 1px solid black ;
+    }
+    .project6:hover{
+        background-color:  white;
+        border: 1px solid wite ;
+    }
+    
+}
+@media screen and (min-width: 601px) and (max-width: 1024px){ 
+
+    .header-container{
+        background-image: url(/asset/professional\ headshot.JPG);
+        color: white;
+        padding: 20px;
+        margin-left: 20px;
+        background-repeat: no-repeat;
+        text-align: left;
+        background-size:cover;
+        background-position: center;
+        border: 2px solid rgb(13, 0, 49);
+        border-radius:500px 10px ;
+    }
+    .list {
+        margin: 12px;
+        padding: 2px;
+        text-align: left;
+    }    
+    .list li a {
+        color:rgb(13, 0, 49);
+        margin: 15px;
+        padding-right: 5px;
+        text-decoration: none;
+        transition: 0.5;
+        font-size: 16px;
+        font-weight: 800;
+    }
+    .list li a:hover {
+        color: rgb(13, 0, 49);  
+        text-shadow: 1px 0.5px white;
+        font-size: 17px;
+    }
+    .header-image {
+        text-align: left;
+        padding-right: 50px;
+        margin-bottom: 250px;
+        background-color: 0,0,0,0.5;
+        margin-left: 50px;
+    }
+    .header-image h1 {
+        padding: 10px;
+        margin: auto;
+        color:  white;
+        font-weight: 1000px;
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .header-image h3 {
+        color: white;
+        font-weight: 900;
+        font-size: 25px;
+        width: 310px;
+        border-radius: 15px;
+        padding: 5px;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+    .header-image h4 {
+        color: white;
+        font-size: 18px;
+        width: 300px;
+        text-align: left;
+        margin: 2;
+    }
+    .header-image button {
+        background-color:white;
+        padding: 15px;
+        color:  rgb(13, 0, 49);
+        border: 1px solid rgb(13, 0, 49)black ;
+        border-radius: 15px;
+        box-shadow: 1px 8px rgb(13, 0, 49);
+        margin-top: 15px;
+        font-weight: 900;
+    }
+    .header-image button:hover {
+        background-color:  rgb(13, 0, 49);
+        color: white;
+        border: 1px solid rgb(13, 0, 49) ;
+        box-shadow: 1px 10px white;
+    }
+    .about-container{
+        padding: 10px;
+        margin: 20px;
+        background-color: rgb(13, 0, 49);
+        color: white;
+        border: 1px solid rgb(13, 0, 49) ;
+        border-radius: 15px;
+    }
+    #about {
+        text-align: left;
+        line-height: 1.5;
+        padding: 10px;
+    }
+    #about h2 {
+        color: white;
+        text-transform: uppercase;
+        font-size: 35px;
+    }
+    #about p {
+        color: white;
+        font-size: 16px;
+        line-height: 2;
+    }
+    .gallery{
+        background-color: rgb(13, 0, 49);
+        padding: 10px;
+        margin-bottom: 20px;
+       }
+       .gallery ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: left;
+       }
+       .gallery ul li {
+        margin-right: 20px;
+        margin-bottom: 20px;
+        flex: 1 0 30%;
+       }
+       .gallery ul img {
+        max-width: 100%;
+       }
+       .gallery h1{
+        color:  white;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 28px;
+        margin: 20px 10px;
+       }
+    .image1, .image2, .image3, .image4{
+        display: flex;
+        padding: 10px;
+        height: 300px;
+        vertical-align: middle;
+        margin-right: 20px;
+        width: 300px;
+    }
+    .image2, .image4{
+    }
+    .why-us {
+        padding: 20px;
+        margin: 20px;
+        background-color: whitesmoke;
+        color: rgb(13, 0, 49);
+       }
+       .why h2 {
+        color: rgb(13, 0, 49);
+           font-size: 30px;
+           text-transform: uppercase;
+       }
+       .why p {
+        color: rgb(13, 0, 49);
+           font-size: 18px;
+           padding: 5px;
+           line-height: 2;
+       }
+       .serviceh2 {
+            color: rgb(13, 0, 49);
+           font-size: 25px;
+           text-align: center;
+           margin-top: 10px;
+       }
+       .service {
+        color: rgb(13, 0, 49);
+           font-size: 14px;
+           text-align: center;
+           padding: 5px;
+           margin-bottom: 10px;
+           display: flex;
+           flex-direction: row;
+       }
+       .testimonial{
+        padding: 40px;
+       }
+       .testimonial h1 {
+        color: rgb(13, 0, 49);
+           font-size: 30px;
+           text-align: center;
+           text-transform: uppercase;
+           margin-bottom: 10px;
+       }
+       .testimonial p {
+        color: rgb(13, 0, 49);
+           font-size: 15px;
+           text-align: center;
+       }
+       .testimonial h3 {
+        color: rgb(13, 0, 49);
+           font-size: 20px;
+           text-align: center;
+       }
+       .test {
+        color: white;
+        background: rgb(13, 0, 49);
+        padding: 2px;
+        border-radius: 5px;
+        font-size: small;
+        font-style: italic;
+       }
+       .shuka {
+        font-weight: bold;
+       }
+       #portfolio{
+        background-color: rgb(13, 0, 49);
+        padding: 20px;
+        margin: 20px;
+       }
+       #portfolio ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center
+       }
+       #portfolio ul li {
+        margin-right: 20px;
+        margin-bottom: 20px;
+        flex: 1 0 25%;
+       }
+       #portfolio ul img {
+        max-width: 100%;
+       }
+       #portfolio h1{
+        padding: 15px;
+        color:  white;
+        border: 1px solid rgb(13, 0, 49) ;
+        border-radius: 10px;
+        box-shadow: 1px 6px white;
+        margin-top: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        width:auto;  
+        margin-bottom: 50px;
+        font-size: 28px;
+       }
+       .project1, .project2, .project3, .project4, .project5, .project6{
+        display: flex;
+        padding: 10px;
+        height: 200px;
+        vertical-align: middle;
+        margin-right: 20px;
+        width: 300px;
+        align-items: center;
+    }
+    .project1:hover{
+        background-color:  black;
+        border: 1px solid black ;
+    }
+    .project2:hover{
+        background-color:  white;
+        border: 1px solid wite ;
+    }
+    .project3:hover{
+        background-color:  black;
+        border: 1px solid black ;
+    }
+    .project4:hover{
+        background-color:  white;
+        border: 1px solid wite ;
+    }
+    .project5:hover{
+        background-color:  black;
+        border: 1px solid black ;
+    }
+    .project6:hover{
+        background-color:  white;
+        border: 1px solid wite ;
+    }
+}
